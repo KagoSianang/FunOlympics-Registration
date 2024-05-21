@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="Images/logo.png" rel="icon">
+    <title>Login</title>
+</head>
+<body background="Images/Paris.jpeg">
+    
+    <div class="login-container">
+        <h2>Fun Olympics</h2>
+        <h2>Login</h2>
+        <img src="Images/logo.png" alt="Sports Logo" class="logo">
+        <form action="login.php" method="POST">
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <input type="submit" value="Login">
+            <div><a href="forgot_password.html">Forgot Password?</a></div>
+            <a href="register.html">No Account? Sign Up</a>
+        </form>
+        <form action="adminlogin.php" class="switch-button">
+            <input type="submit" value="Admin Login">
+        </form>
+    </div>
+</body>
+</html>
